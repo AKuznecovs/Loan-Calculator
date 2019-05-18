@@ -1,0 +1,158 @@
+body {
+	
+	width: 100%;
+	min-height: 700px;
+	margin: 2%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: rgb(157, 192, 249);
+}
+
+input {
+	height: 35px;
+	width: 85%;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-radius: 5px;
+	color: #4f5268;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#container {
+	background-color: rgb(50, 69, 99);
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 2%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25% 25% 25% 25%;
+	grid-gap: 2%;
+	min-height: 90%;
+	min-width: 70%;
+	font-size: 1em;
+	font-family: Verdana;
+	
+}
+
+#kreditaSumma, #pirmaIemaksa, #ligumaTermins, #procentuLikme {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	align-items: center;
+	height: 50%;
+}
+
+/* Slider */
+
+.slidecontainer {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slider {
+  -webkit-appearance: none;
+  min-width: 65%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #093884;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #093884;
+  cursor: pointer;
+}
+
+label, p {
+	color: white;
+	font-weight: bold;
+
+}
+
+#demo1, #demo2, #demo3, #demo4 {
+	color: #cfd5fc;
+}
+
+.inputSpace {
+	display: inline-block;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-left: 3%;
+
+}
+
+#error {
+	display: none;
+	
+}
+#errorFill {
+	display: none;
+	
+}
+
+#error.show {
+	display: block;
+	color: red;
+	text-align: center;
+	text-transform: uppercase;
+	height: 40px;
+}
+
+#errorFill.reveal {
+	display: block;
+	color: red;
+	text-align: center;
+	text-transform: uppercase;
+	height: 40px;
+}
+
+.currency {
+	margin-left: -55px;
+	color: #4f5268;
+	font-family: Verdana;
+	font-size: 0.95em;
+	font-weight: bold;
+}
+
+.error {
+	min-height: 40px;
+}
+
+#demo2 {
+	font-size: 1.5em;
+	color: red;
+}
+
+#demo3 {
+	font-size: 1.5em;
+	color: white;
+}

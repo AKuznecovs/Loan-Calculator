@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<title></title>
+</head>
+<body>
+
+	<div id="container">
+
+		<div>
+			<label>LĪZINGA SUMMA</label>
+			<div id="kreditaSumma">
+				<div class="slidecontainer">
+  					<p>1 EUR</p><input id="kreditaRange" type="range" min="1" max="10000" value="500" class="slider"><p>10000 EUR</p>
+  				</div>
+  				<div class="inputSpace">
+  					<input type="number" name="field" value="500" id="kreditaInput" min="1" max="10000" onpaste="return false"><label class="currency">EUR</label>
+  					
+  				</div>
+  					
+			</div>
+
+		</div>
+
+		<div>
+			<label>PIRMĀ IEMAKSA PROCENTOS</label>
+			<div id="pirmaIemaksa">
+				<div class="slidecontainer">
+  					<p> 1 %</p><input type="range" min="1" max="100" value="25" class="slider" id="iemaksaRange"><p>100 %</p>
+  				</div>
+  				<div class="inputSpace">
+  					<input type="number" name="field" value="25" id="iemaksaInput" min="1" max="100" onpaste="return false"><label class="currency">%</label>
+  					<p><span id="demo1"></span> EUR</p>
+  				</div>	
+			</div>
+
+		</div>
+
+		<div>
+			<label>ATMAKSAS TERMIŅŠ</label>
+			<div id="ligumaTermins">
+				<div class="slidecontainer">
+  					<p>1 gads</p><input type="range" min="12" max="60" value="1" class="slider" id="terminsRange"><p>5 gadi</p>
+  				</div>
+  				<div class="inputSpace">
+  					<input type="number" name="field" value="12" id="terminsInput" min="12" max="60" onpaste="return false"><label class="currency">mēn.</label>
+  					
+  				</div>
+			</div>
+
+		<div>
+			<label>PROCENTU LIKME</label>
+			<div id="procentuLikme">
+				<div class="slidecontainer">
+  					<p>2 %</p><input type="range" min="2" max="10" value="2" class="slider" id="procentiRange"><p>10 %</p>
+  				</div>
+  				<div class="inputSpace">
+  					<input type="number" name="field" value="2" id="procentiInput" min="2" max="10" onpaste="return false"><label class="currency">%</label>
+  					
+  				</div>
+			</div>
+		</div>
+		
+		<div>
+			<div id="result">
+			<div class="error">
+				<label id="error">Kļūda! Dati tiek ievadīti nepareizi!</label>
+				<label id="errorFill">Dati nav ievadīti. Ievadiet datus!</label>
+				
+
+			
+		</div>	
+			<p>Ikmēneša maksājums: <span id="demo2"></span> EUR</p>
+				<p>Kopējā summa apmaksai: <span id="demo3"></span> EUR</p>
+				
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script type="text/javascript" src="script.js"></script>
+		
+	
+
+</body>
+</html>
